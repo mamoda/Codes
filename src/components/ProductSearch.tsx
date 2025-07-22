@@ -25,10 +25,10 @@ const ProductSearch: React.FC = () => {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder="Search products by name, barcode, or category..."
+              placeholder="بحث عن منتج بالاسم أو بالباركود"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg"
+              className="w-full text-center pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg"
             />
           </div>
           <button className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors">
@@ -75,13 +75,13 @@ const ProductSearch: React.FC = () => {
                 onClick={() => addToCart(product)}
               >
                 <div className="w-full h-32 bg-gray-100 rounded-lg mb-3 flex items-center justify-center">
-                  <span className="text-gray-400 text-xs">No Image</span>
+                  <span className="text-gray-400 text-xs">لا صورة</span>
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1 line-clamp-2">{product.name}</h3>
                 <p className="text-sm text-gray-500 mb-2">{product.category}</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-lg font-bold text-blue-600">${product.price.toFixed(2)}</span>
-                  <span className="text-xs text-gray-500">{product.stock} left</span>
+                  <span className="text-lg font-bold text-blue-600">SAR{product.price.toFixed(2)}</span>
+                  <span className="text-xs text-gray-500">{product.stock} باق</span>
                 </div>
               </div>
             ))}
@@ -95,15 +95,15 @@ const ProductSearch: React.FC = () => {
                 onClick={() => addToCart(product)}
               >
                 <div className="w-16 h-16 bg-gray-100 rounded-lg mr-4 flex items-center justify-center">
-                  <span className="text-gray-400 text-xs">No Image</span>
+                  <span className="text-gray-400 text-xs">لا صورة</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-gray-900">{product.name}</h3>
                   <p className="text-sm text-gray-500">{product.category} • {product.barcode}</p>
-                  <p className="text-xs text-gray-400">{product.stock} units in stock</p>
+                  <p className="text-xs text-gray-400">{product.stock} وحدات في المخزن</p>
                 </div>
                 <div className="text-right">
-                  <span className="text-lg font-bold text-blue-600">${product.price.toFixed(2)}</span>
+                  <span className="text-lg font-bold text-blue-600">SAR{product.price.toFixed(2)}</span>
                 </div>
               </div>
             ))}

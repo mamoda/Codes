@@ -18,11 +18,11 @@ const Cart: React.FC<CartProps> = ({ onCheckout }) => {
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 h-full flex flex-col">
       <div className="p-6 border-b border-gray-200">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold text-gray-900">Shopping Cart</h2>
           <div className="flex items-center space-x-2">
             <ShoppingCart className="w-5 h-5 text-gray-500" />
-            <span className="text-sm text-gray-500">{getItemCount()} items</span>
+            <span className="text-sm text-gray-500">{getItemCount()} القطع</span>
           </div>
+          <h2 className="text-xl font-semibold text-gray-900">عربة التسوق</h2>
         </div>
       </div>
 
@@ -30,8 +30,8 @@ const Cart: React.FC<CartProps> = ({ onCheckout }) => {
         {cartItems.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full text-gray-500">
             <ShoppingCart className="w-16 h-16 mb-4" />
-            <p className="text-lg">Cart is empty</p>
-            <p className="text-sm">Add products to get started</p>
+            <p className="text-lg">العربة فارغة</p>
+            <p className="text-sm">أضف المنتج للبدء</p>
           </div>
         ) : (
           <div className="space-y-4">

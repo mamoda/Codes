@@ -20,13 +20,13 @@ function App() {
       <CartProvider>
         <InventoryProvider>
           <Router>
-            <div className="flex h-screen bg-gray-100">
+            <div className="flex flex-row-reverse h-screen bg-gray-100">
               <Sidebar isOpen={isSidebarOpen} />
               <div className="flex-1 flex flex-col overflow-hidden">
                 <Header 
                   onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} 
                 />
-                <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-50 p-6">
+                <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-50 p-6  ">
                   <Routes>
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/pos" element={<POS />} />

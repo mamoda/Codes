@@ -20,12 +20,12 @@ const Customers: React.FC = () => {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-900">Customer Management</h1>
         <button className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center hover:bg-blue-700 transition-colors">
           <Plus className="w-5 h-5 mr-2" />
-          Add Customer
+          إضافة عميل
         </button>
-      </div>
+            <h1 className="text-2xl font-bold text-gray-900">إدارة العملاء</h1>
+  </div>
 
       <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
         <div className="flex items-center space-x-4 mb-6">
