@@ -40,12 +40,12 @@ const Dashboard: React.FC = () => {
           <h3 className="text-lg font-semibold text-gray-900 mb-4">نظرة عامة على المبيعات</h3>
           <div className="h-64 flex items-center justify-center bg-gray-50 rounded-lg">
             <TrendingUp className="w-16 h-16 text-gray-400" />
-            <span className="ml-4 text-gray-500">Sales chart would go here</span>
+            <span className="ml-4 text-gray-500">مخطط المبيعات سوف يظهر هنا</span>
           </div>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Recent Transactions</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">المعاملات الأخيرة</h3>
           <div className="space-y-3">
             {recentTransactions.map((transaction) => (
               <div key={transaction.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
