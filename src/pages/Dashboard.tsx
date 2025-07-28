@@ -52,13 +52,13 @@ const Dashboard: React.FC = () => {
                 <div className="flex items-center">
                   <Clock className="w-4 h-4 text-gray-400 mr-3" />
                   <div>
-                    <p className="font-medium text-gray-900">{transaction.customer}</p>
                     <p className="text-sm text-gray-500">{transaction.id}</p>
+                    <p className="font-medium text-gray-900">{transaction.customer}</p>
                   </div>
                 </div>
                 <div className="text-right">
-                  <p className="font-semibold text-gray-900">${transaction.amount}</p>
                   <p className="text-sm text-gray-500">{transaction.time}</p>
+                  <p className="font-semibold text-gray-900">${transaction.amount}</p>
                 </div>
               </div>
             ))}
