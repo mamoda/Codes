@@ -13,7 +13,7 @@ const POS: React.FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-full">
+    <div className="flex-row-reverse grid grid-cols-1 lg:grid-cols-3 gap-6 h-full">
       <div className="lg:col-span-2">
         <ProductSearch />
       </div>
