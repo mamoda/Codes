@@ -11,6 +11,8 @@ import Settings from './pages/Settings';
 import { AuthProvider } from './contexts/AuthContext';
 import { CartProvider } from './contexts/CartContext';
 import { InventoryProvider } from './contexts/InventoryContext';
+import LoginPage from './LoginPage';
+
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -28,6 +30,7 @@ function App() {
                 />
                 <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-50 p-6  ">
                   <Routes>
+                    <Route path="/login" element={<LoginPage />} />
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/pos" element={<POS />} />
                     <Route path="/inventory" element={<Inventory />} />
