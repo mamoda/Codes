@@ -14,6 +14,7 @@ import { InventoryProvider } from './contexts/InventoryContext';
 import LoginPage from './LoginPage';
 
 
+
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
