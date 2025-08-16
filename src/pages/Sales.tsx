@@ -26,7 +26,7 @@ const Sales: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="flex-row-reverse grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900 mb-2">إجمالي المبيعات</h3>
           <p className="text-3xl font-bold text-green-600">SAR8,902.50</p>
