@@ -11,8 +11,7 @@ import Settings from './pages/Settings';
 import { AuthProvider } from './contexts/AuthContext';
 import { CartProvider } from './contexts/CartContext';
 import { InventoryProvider } from './contexts/InventoryContext';
-import LoginPage from './LoginPage';
-
+import LoginPage from './pages/LoginPage';
 
 
 function App() {
