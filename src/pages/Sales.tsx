@@ -13,48 +13,48 @@ const Sales: React.FC = () => {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-900">Sales Reports</h1>
+        <h1 className="text-2xl font-bold text-gray-900">تقارير المبيعات</h1>
         <div className="flex space-x-3">
           <button className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg flex items-center hover:bg-gray-200 transition-colors">
             <Filter className="w-5 h-5 mr-2" />
-            Filter
+            تنقية
           </button>
           <button className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center hover:bg-blue-700 transition-colors">
             <Download className="w-5 h-5 mr-2" />
-            Export
+            استخراج
           </button>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">Total Sales</h3>
-          <p className="text-3xl font-bold text-green-600">$8,902.50</p>
-          <p className="text-sm text-gray-500 mt-1">This week</p>
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">إجمالي المبيعات</h3>
+          <p className="text-3xl font-bold text-green-600">SAR8,902.50</p>
+          <p className="text-sm text-gray-500 mt-1">هذا الأسبوع</p>
         </div>
         
         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">Transactions</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">المعاملات</h3>
           <p className="text-3xl font-bold text-blue-600">134</p>
-          <p className="text-sm text-gray-500 mt-1">This week</p>
+          <p className="text-sm text-gray-500 mt-1">هذا الأسبوع</p>
         </div>
         
         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">Avg. Sale</h3>
-          <p className="text-3xl font-bold text-purple-600">$66.46</p>
-          <p className="text-sm text-gray-500 mt-1">Per transaction</p>
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">متوسط المبيعات</h3>
+          <p className="text-3xl font-bold text-purple-600">SAR66.46</p>
+          <p className="text-sm text-gray-500 mt-1">عن كل عملية بيع</p>
         </div>
       </div>
 
       <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
         <div className="flex items-center justify-between mb-4">
-          <h3 className="text-lg font-semibold text-gray-900">Daily Sales Summary</h3>
+          <h3 className="text-lg font-semibold text-gray-900">ملخص المبيعات اليومية</h3>
           <div className="flex items-center space-x-2">
             <Calendar className="w-5 h-5 text-gray-400" />
             <select className="border border-gray-300 rounded-lg px-3 py-1 text-sm">
-              <option>Last 7 days</option>
-              <option>Last 30 days</option>
-              <option>Last 3 months</option>
+              <option>آخر 7 ايام</option>
+              <option>آخر 10 ايام</option>
+              <option>آخر 3 شهور</option>
             </select>
           </div>
         </div>
@@ -64,19 +64,19 @@ const Sales: React.FC = () => {
             <thead className="bg-gray-50">
               <tr>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Date
+                  تاريخ
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Transactions
+                  معاملات
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Items Sold
+                  الوحدات المباعة 
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Total Amount
+                   إجمالي الكمي
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Avg. Transaction
+                  متوسط القيمة
                 </th>
               </tr>
             </thead>
