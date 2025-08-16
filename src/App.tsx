@@ -17,6 +17,7 @@ import LoginPage from './LoginPage';
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  
 
   return (
     <AuthProvider>
