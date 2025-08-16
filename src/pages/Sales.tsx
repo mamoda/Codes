@@ -34,15 +34,15 @@ const Sales: React.FC = () => {
         </div>
         
         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">المعاملات</h3>
-          <p className="text-3xl font-bold text-blue-600">134</p>
-          <p className="text-sm text-gray-500 mt-1">هذا الأسبوع</p>
+          <h3 className="text-lg text-right font-semibold text-gray-900 mb-2">المعاملات</h3>
+          <p className="text-3xl text-right font-bold text-blue-600">134</p>
+          <p className="text-sm text-right text-gray-500 mt-1">هذا الأسبوع</p>
         </div>
         
         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">متوسط المبيعات</h3>
-          <p className="text-3xl font-bold text-purple-600">SAR66.46</p>
-          <p className="text-sm text-gray-500 mt-1">عن كل عملية بيع</p>
+          <h3 className="text-lg text-right font-semibold text-gray-900 mb-2">متوسط المبيعات</h3>
+          <p className="text-3xl text-right font-bold text-purple-600">SAR66.46</p>
+          <p className="text-sm text-right text-gray-500 mt-1">عن كل عملية بيع</p>
         </div>
       </div>
 
