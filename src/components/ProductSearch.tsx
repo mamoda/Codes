@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Search, Scan, Grid, List } from 'lucide-react';
 import { useInventory } from '../contexts/InventoryContext';
 import { useCart } from '../contexts/CartContext';
+import background from "../assets/background.png";
+
 
 const ProductSearch: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -75,7 +77,7 @@ const ProductSearch: React.FC = () => {
                 onClick={() => addToCart(product)}
               >
                 <div className="w-full h-32 bg-gray-100 rounded-lg mb-3 flex items-center justify-center">
-                  <span className="text-gray-400 text-xs">لا صورة</span>
+                  <img src={background} className="text-gray-400 text-xs">لا صورة</img>
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1 line-clamp-2">{product.name}</h3>
                 <p className="text-sm text-gray-500 mb-2">{product.category}</p>

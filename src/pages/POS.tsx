@@ -3,6 +3,8 @@ import ProductSearch from '../components/ProductSearch';
 import Cart from '../components/Cart';
 import PaymentModal from '../components/PaymentModal';
 import { useCart } from '../contexts/CartContext';
+import background from "../assets/background.png";
+
 
 const POS: React.FC = () => {
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
