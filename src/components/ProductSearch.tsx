@@ -77,8 +77,8 @@ const ProductSearch: React.FC = () => {
                 onClick={() => addToCart(product)}
               >
                 <div className="w-full h-32 bg-gray-100 rounded-lg mb-3 flex items-center justify-center">
-                  <img src={background} className="text-gray-400 text-xs">لا صورة</img>
-                </div>
+                 <img src={background} alt={product.name} className="w-full h-full object-cover rounded-lg" />
+                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1 line-clamp-2">{product.name}</h3>
                 <p className="text-sm text-gray-500 mb-2">{product.category}</p>
                 <div className="flex justify-between items-center">
