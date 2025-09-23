@@ -119,7 +119,7 @@ const Dashboard: React.FC = () => {
                   <Clock className="w-4 h-4 text-gray-400 mr-3" />
                   <div>
                     <p className="font-semibold text-gray-900">
-                      ${transaction.amount}
+                      SAR {transaction.amount}
                     </p>
                     <p className="text-sm text-gray-500">{transaction.time}</p>
                   </div>
