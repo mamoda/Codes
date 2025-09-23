@@ -1,5 +1,4 @@
 import React from "react";
-import background from "../assets/background.png";
 import {
   TrendingUp,
   Users,
