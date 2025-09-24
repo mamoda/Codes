@@ -113,7 +113,7 @@ const Dashboard: React.FC = () => {
             {recentTransactions.map((transaction) => (
               <div
                 key={transaction.id}
-                className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
+                className="flex flex-row-reverse items-center justify-between p-3 bg-gray-50 rounded-lg"
               >
                 <div className="flex items-center">
                   <Clock className="w-4 h-4 text-gray-400 mr-3" />
