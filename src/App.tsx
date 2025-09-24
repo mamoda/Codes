@@ -31,8 +31,8 @@ function App() {
                 />
                 <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-50 p-6  ">
                   <Routes>
-                    <Route path="/login" element={<LoginPage />} />
-                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/" element={<LoginPage />} />
+                    <Route path="/Dashboard" element={<Dashboard />} />
                     <Route path="/pos" element={<POS />} />
                     <Route path="/inventory" element={<Inventory />} />
                     <Route path="/sales" element={<Sales />} />
