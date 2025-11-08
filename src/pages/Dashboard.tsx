@@ -12,7 +12,7 @@ const Dashboard: React.FC = () => {
   const stats = [
     {
       label: "Today's Sales",
-      value: "$2,847.50",
+      value: "ج.م 2,847.50",
       icon: DollarSign,
       color: "text-green-600 bg-green-100",
     },
@@ -119,7 +119,7 @@ const Dashboard: React.FC = () => {
                   <Clock className="w-4 h-4 text-gray-400 mr-3" />
                   <div>
                     <p className="font-semibold text-gray-900">
-                      SAR {transaction.amount}
+                      ج.م {transaction.amount}
                     </p>
                     <p className="text-sm text-gray-500">{transaction.time}</p>
                   </div>
