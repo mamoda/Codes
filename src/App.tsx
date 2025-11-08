@@ -11,7 +11,7 @@ import Settings from './pages/Settings';
 import { AuthProvider } from './contexts/AuthContext';
 import { CartProvider } from './contexts/CartContext';
 import { InventoryProvider } from './contexts/InventoryContext';
-import LoginPage from './pages/LoginPage';
+// import LoginPage from './pages/LoginPage';
 
 
 function App() {
@@ -31,7 +31,6 @@ function App() {
                 />
                 <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-50 p-6  ">
                   <Routes>
-                    <Route path="/" element={<LoginPage />} />
                     <Route path="/Dashboard" element={<Dashboard />} />
                     <Route path="/pos" element={<POS />} />
                     <Route path="/inventory" element={<Inventory />} />
