@@ -37,7 +37,7 @@ const Cart: React.FC<CartProps> = ({ onCheckout }) => {
           <div className="space-y-4">
             {cartItems.map((item) => (
               <div key={item.id} className="bg-gray-50 rounded-lg p-4">
-                <div className="flex justify-between items-start mb-2">
+                <div className="flex flex-row-reverse justify-between items-start mb-2">
                   <h3 className="font-medium text-gray-900">{item.name}</h3>
                   <button
                     onClick={() => removeFromCart(item.id)}
@@ -83,16 +83,16 @@ const Cart: React.FC<CartProps> = ({ onCheckout }) => {
         <div className="p-6 border-t border-gray-200">
           <div className="space-y-2 mb-4">
             <div className="flex justify-between text-sm">
-              <span className="text-gray-600">Subtotal:</span>
-              <span className="text-gray-900">${subtotal.toFixed(2)}</span>
+              <span className="text-gray-600">الإجمالي الفرعي:</span>
+              <span className="text-gray-900">ج.م{subtotal.toFixed(2)}</span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-gray-600">Tax (8.25%):</span>
-              <span className="text-gray-900">${tax.toFixed(2)}</span>
+              <span className="text-gray-600">ضريبة (8.25%):</span>
+              <span className="text-gray-900">ج.م{tax.toFixed(2)}</span>
             </div>
             <div className="flex justify-between text-lg font-semibold pt-2 border-t border-gray-200">
-              <span className="text-gray-900">Total:</span>
-              <span className="text-gray-900">${total.toFixed(2)}</span>
+              <span className="text-gray-900">الإجمالي:</span>
+              <span className="text-gray-900">ج.م{total.toFixed(2)}</span>
             </div>
           </div>
           
@@ -100,7 +100,7 @@ const Cart: React.FC<CartProps> = ({ onCheckout }) => {
             onClick={onCheckout}
             className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
-            Proceed to Payment
+            واصل للدفع
           </button>
         </div>
       )}
