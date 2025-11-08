@@ -37,7 +37,7 @@ const Cart: React.FC<CartProps> = ({ onCheckout }) => {
           <div className="space-y-4">
             {cartItems.map((item) => (
               <div key={item.id} className="bg-gray-50 rounded-lg p-4">
-                <div className="flex flex-row-reverse justify-between items-start mb-2">
+                <div className="flex justify-between items-start mb-2">
                   <h3 className="font-medium text-gray-900">{item.name}</h3>
                   <button
                     onClick={() => removeFromCart(item.id)}
@@ -47,7 +47,7 @@ const Cart: React.FC<CartProps> = ({ onCheckout }) => {
                   </button>
                 </div>
                 
-                <div className="flex justify-between items-center">
+                <div className="flex flex-row-reverse justify-between items-center">
                   <div className="flex items-center space-x-3">
                     <button
                       onClick={() => updateQuantity(item.id, item.quantity - 1)}
