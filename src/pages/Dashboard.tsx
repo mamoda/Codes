@@ -11,25 +11,25 @@ import {
 const Dashboard: React.FC = () => {
   const stats = [
     {
-      label: "Today's Sales",
+      label: "المبيعات اليومية",
       value: "ج.م 2,847.50",
       icon: DollarSign,
       color: "text-green-600 bg-green-100",
     },
     {
-      label: "Transactions",
+      label: "المنتجات المباعة",
       value: "47",
       icon: ShoppingBag,
       color: "text-blue-600 bg-blue-100",
     },
     {
-      label: "Active Customers",
+      label: "الزبائن النشطون",
       value: "156",
       icon: Users,
       color: "text-purple-600 bg-purple-100",
     },
     {
-      label: "Low Stock Items",
+      label: "المنتجات ذات المخزون المنخفض",
       value: "8",
       icon: Package,
       color: "text-orange-600 bg-orange-100",
@@ -39,31 +39,31 @@ const Dashboard: React.FC = () => {
   const recentTransactions = [
     {
       id: "TXN001",
-      customer: "Sarah Johnson",
+      customer: "محمد جمال",
       amount: 45.99,
       time: "2 minutes ago",
     },
     {
       id: "TXN002",
-      customer: "Mike Chen",
+      customer: "إسلام رجب",
       amount: 78.5,
       time: "5 minutes ago",
     },
     {
       id: "TXN003",
-      customer: "Emma Davis",
+      customer: "إيمان شريف",
       amount: 124.25,
       time: "8 minutes ago",
     },
     {
       id: "TXN004",
-      customer: "Alex Wilson",
+      customer: "رجب صالح",
       amount: 67.8,
       time: "12 minutes ago",
     },
     {
       id: "TXN005",
-      customer: "Lisa Brown",
+      customer: "إسماعيل حسان",
       amount: 203.45,
       time: "15 minutes ago",
     },
@@ -113,12 +113,12 @@ const Dashboard: React.FC = () => {
             {recentTransactions.map((transaction) => (
               <div
                 key={transaction.id}
-                className="flex items-center text-right justify-between p-3 bg-gray-50 rounded-lg"
+                className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
               >
-                <div className="flex text-right items-center">
+                <div className="flex items-center">
                   <Clock className="w-4 h-4 text-gray-400 mr-3" />
                   <div>
-                    <p className="text-right font-semibold text-gray-900">
+                    <p className="font-semibold text-gray-900">
                       ج.م {transaction.amount}
                     </p>
                     <p className="text-sm text-gray-500">{transaction.time}</p>
