@@ -47,7 +47,7 @@ const Cart: React.FC<CartProps> = ({ onCheckout }) => {
                   </button>
                 </div>
                 
-                <div className="flex flex-row-reverse justify-between items-center">
+                <div className="flex  justify-between items-center">
                   <div className="flex items-center space-x-3">
                     <button
                       onClick={() => updateQuantity(item.id, item.quantity - 1)}
