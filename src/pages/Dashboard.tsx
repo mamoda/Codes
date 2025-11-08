@@ -77,7 +77,7 @@ const Dashboard: React.FC = () => {
             key={stat.label}
             className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
           >
-            <div className="flex items-center">
+            <div className="flex flex-row-reverse items-center">
               <div className={`p-3 rounded-full ${stat.color}`}>
                 <stat.icon className="w-6 h-6" />
               </div>
@@ -113,12 +113,12 @@ const Dashboard: React.FC = () => {
             {recentTransactions.map((transaction) => (
               <div
                 key={transaction.id}
-                className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
+                className="flex items-center text-right justify-between p-3 bg-gray-50 rounded-lg"
               >
-                <div className="flex items-center">
+                <div className="flex text-right items-center">
                   <Clock className="w-4 h-4 text-gray-400 mr-3" />
                   <div>
-                    <p className="font-semibold text-gray-900">
+                    <p className="text-right font-semibold text-gray-900">
                       ج.م {transaction.amount}
                     </p>
                     <p className="text-sm text-gray-500">{transaction.time}</p>
