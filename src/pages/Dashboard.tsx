@@ -41,31 +41,31 @@ const Dashboard: React.FC = () => {
       id: "TXN001",
       customer: "محمد جمال",
       amount: 45.99,
-      time: "2 minutes ago",
+      time: "2 منذ دقيقة",
     },
     {
       id: "TXN002",
       customer: "إسلام رجب",
       amount: 78.5,
-      time: "5 minutes ago",
+      time: "5 منذ دقيقة",
     },
     {
       id: "TXN003",
       customer: "إيمان شريف",
       amount: 124.25,
-      time: "8 minutes ago",
+      time: "8 منذ دقيقة",
     },
     {
       id: "TXN004",
       customer: "رجب صالح",
       amount: 67.8,
-      time: "12 minutes ago",
+      time: "12 منذ دقيقة",
     },
     {
       id: "TXN005",
       customer: "إسماعيل حسان",
       amount: 203.45,
-      time: "15 minutes ago",
+      time: "15 منذ دقيقة",
     },
   ];
 
